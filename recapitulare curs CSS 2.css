@@ -1,0 +1,370 @@
+.body1 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.square0 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+#square1 {
+  background-color: red;
+  position: relative;
+}
+#square3 {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+}
+
+#square2 {
+  background-color: blue;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#square4 {
+  background-color: violet;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+.container1 {
+  width: 500px;
+  height: 500px;
+  background-color: bisque;
+  display: flex;
+
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
+  /* aliniere pe orizontala  */
+  align-items: flex-start;
+  /* aliniere pe verticala */
+  /* flex-wrap: wrap; aceasta comanda nu mai incadreaza toate elementele intr o linie ci o rupe dupa ce linia este plina*/
+
+  /* flex-direction: row; */
+  /*aliniere pe verticala */
+  /* justify-content: center; */
+  /* aliniere pe orizontala */
+  /* align-items: center; */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+#square5 {
+  background-color: red;
+}
+
+#square6 {
+  background-color: green;
+}
+
+#square7 {
+  background-color: yellow;
+}
+
+#square8 {
+  background-color: blue;
+}
+
+.container2 {
+  width: 80%;
+  height: 50%;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.square9 {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 5px solid pink;
+  background-color: black;
+  padding: 10px;
+}
+
+.body2 {
+  min-height: 1000px;
+}
+
+.container3 {
+  display: grid;
+  justify-content: stretch;
+  background-color: blanchedalmond;
+  gap: 10px 20px;
+}
+
+.item {
+  background-color: beige;
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.item-6 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.item-7 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.item-9 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.container4 {
+  display: grid;
+  justify-content: stretch;
+  background-color: blanchedalmond;
+  gap: 10px 5px;
+}
+
+.item-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item-menu {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item-main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.item-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.item-footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.container5 {
+  display: grid;
+  justify-content: stretch;
+  background-color: blanchedalmond;
+  gap: 10px 20px;
+  grid-template-areas:
+    "header header header"
+    "menu main right"
+    "menu footer footer";
+}
+/* exista o regula de urmat, daca am inceput prima linie cu 4 elemente, 
+toate randurile trebuie sa aiba 4 coloane, altfel se strica tabelul */
+
+.item-header2 {
+  grid-area: header;
+}
+.item-menu2 {
+  grid-area: menu;
+}
+.item-main2 {
+  grid-area: main;
+}
+.item-right2 {
+  grid-area: right;
+}
+.item-footer2 {
+  grid-area: footer;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* media queries - sunt niste reguli pe baza carora comenzile devin responsive, 
+adica in functie de comanda aleasa se intampla in timp real*/
+@media screen and (max-width: 600px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .titlu {
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .titlu {
+    color: green;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="recapitulare curs CSS 2.css" />
+  </head>
+  <body class="body1">
+    <h1>PRIMA PARTE</h1>
+    <div class="square0" style="background-color: red"></div>
+    <!-- ca sa facem un element sa dispara, putem folosi comanda display:none (nu va fi inregistrata) -->
+    <!-- ---------//--------- visibility: hiden, aici va fi doar ascunsa (aici va fi inregistrata si inlocuita cu un spatiu gol)  -->
+    <div
+      class="square0"
+      style="background-color: green; visibility: hidden"
+    ></div>
+    <div class="square0" style="background-color: blue"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>PARTEA A 2 A</h1>
+
+    <!-- static   - static este cel default
+        fixed    - fixat intr un loc - ramane in punctul selectat chiar daca navigam mai jos - se pozitioneaza in f de viewport ( ex: service BOT)
+        relative - se pozitioneaza in punctul 0 al containerului (pentru ca am creeat containerul)
+        absolute - se pozitioneaza in f. de view port, nu de pariti (view port este toata pagina de web), dar unde il punem noi, unde vrem noi
+        sticky   - 2 proprietati obligatorii: top oricat px si z-index (care ne zice inaltimea fata de ecran mai precis AXE din matematice , x: orizontal y: vertical si z: care e inaltimea )
+        -->
+    <div class="container">
+      <div class="square" id="square1">
+        <div class="square" id="square3"></div>
+      </div>
+      <div class="square" id="square2"></div>
+      <div class="square" id="square4"></div>
+
+      <div class="square" id="square1"></div>
+      <div class="square" id="square1"></div>
+      <div class="square" id="square1"></div>
+      <div class="square" id="square1"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1>PARTEA A 3 A</h1>
+    <div class="container1">
+      <div class="square" id="square5"></div>
+      <div class="square" id="square6"></div>
+      <div class="square" id="square7"></div>
+      <div class="square" id="square8"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1>PARTEA A 4 A</h1>
+    <br />
+    <div class="square9"></div>
+    <div class="square9"></div>
+
+    <div class="container2">
+      <div style="width: 20%; background-color: red">
+        <h3>Test</h3>
+        <h3>Test</h3>
+        <h3>Test</h3>
+        <h3>Test</h3>
+      </div>
+      <div style="width: 60%; background-color: blue">
+        <h3>Test</h3>
+        <h3>Test</h3>
+        <h3>Test</h3>
+        <h3>Test</h3>
+      </div>
+    </div>
+    <br />
+    <br />
+  </body>
+  <body class="body2">
+    <h1>PARTEA A 5 A</h1>
+    <div class="container3">
+      <div class="item item-1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item item-6">6</div>
+      <div class="item item-7">7</div>
+      <div class="item">8</div>
+      <div class="item item-9">9</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="container4">
+      <div class="item item-header">Header</div>
+      <div class="item item-menu">Menu</div>
+      <div class="item item-main">Main</div>
+      <div class="item item-right">Right</div>
+      <div class="item item-footer">Footer</div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container5">
+      <div class="item item-header2">Header</div>
+      <div class="item item-menu2">Menu</div>
+      <div class="item item-main2">Main</div>
+      <div class="item item-right2">Right</div>
+      <div class="item item-footer2">Footer</div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>te sun eu</div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./recapitulare curs CSS 2.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="titlu">Chania</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-9">
+        <h1>The City</h1>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+      </div>
+
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>Chania is a city on the island of Crete.</p>
+          <h2>Where?</h2>
+          <p>Crete is a Greek island in the Mediterranean Sea.</p>
+          <h2>How?</h2>
+          <p>You can reach Chania airport from all over Europe.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>
